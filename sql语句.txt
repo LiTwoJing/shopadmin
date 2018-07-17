@@ -1,0 +1,18 @@
+CREATE TABLE manage (
+       ID integer primary key,
+       Cellphone varchar(64) not null ,
+       brand varchar(64) not null ,
+       model varchar(64) not null ,
+       os varchar(64) not null ,
+       cpuBrand varchar(64) not null ,
+       ram Integer not null ,
+       storage Integer not null ,
+       color varchar(64) not null ,
+       description char(1024)  
+)
+
+select * from manage
+
+create sequence manage_seq
+
+insert into manage values(manage_seq.nextval,'小米5s特供','小米','5s','Android','联发科',4096,32,'银色','双十一特供版')

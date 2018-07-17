@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper	namespace="shopadmin.mapper.CellphoneMapper">
+	<select id="findAll" resultType="Cellphone"> 
+		select * from manage 
+	</select>
+	
+	<insert id="insert">
+		insert into manage values(manage_seq.nextval,#{cellphone},#{brand},#{model},#{os},#{cpuBrand},#{ram},#{storage},#{color},#{description})
+	</insert>
+	
+	<delete id="drop">
+		delete from manage where id = #{id}
+	</delete>
+	
+	<select id="findOne" resultType="Cellphone"> 
+		select * from manage where id = #{id}
+	</select>
+	
+	<update id="update">
+		update manage set cellphone=#{cellphone},brand=#{brand},model=#{model},os=#{os},cpuBrand=#{cpuBrand},ram=#{ram},storage=#{storage},color=#{color},description=#{description} where id=#{id}
+	</update>
+</mapper>
