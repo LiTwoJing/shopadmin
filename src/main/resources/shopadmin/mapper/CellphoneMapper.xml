@@ -8,7 +8,7 @@
 	</select>
 	
 	<insert id="insert">
-		insert into manage values(manage_seq.nextval,#{cellphone},#{brand},#{model},#{os},#{cpuBrand},#{ram},#{storage},#{color},#{description})
+		insert into manage values(manage_seq.nextval,#{cellphone},#{brand},#{model},#{os},#{cpuBrand},#{ram},#{storage},#{color},#{description},#{price},#{cpucorenumber})
 	</insert>
 	
 	<delete id="drop">
@@ -20,6 +20,6 @@
 	</select>
 	
 	<update id="update">
-		update manage set cellphone=#{cellphone},brand=#{brand},model=#{model},os=#{os},cpuBrand=#{cpuBrand},ram=#{ram},storage=#{storage},color=#{color},description=#{description} where id=#{id}
+		update manage set cellphone=#{cellphone},brand=#{brand},model=#{model},os=#{os},cpuBrand=#{cpuBrand},ram=#{ram},storage=#{storage},color=#{color},description=#{description},#{price},#{cpucorenumber} where id=#{id}
 	</update>
 </mapper>

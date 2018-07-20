@@ -24,6 +24,8 @@ public class Cellphone {
 	 @Size(min=2,max=20,message="2~20")
 	 private String color;
 	 private String description;
+	 private Integer price;
+	 private String cpucorenumber;
 	 
 	 
 	
@@ -88,6 +90,17 @@ public class Cellphone {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	 
+	public Integer getPrice() {
+		return price;
+	}
+	public void setPrice(Integer price) {
+		this.price = price;
+	}
+	public String getCpucorenumber() {
+		return cpucorenumber;
+	}
+	public void setCpucorenumber(String cpucorenumber) {
+		this.cpucorenumber = cpucorenumber;
+	}
 	 
 }

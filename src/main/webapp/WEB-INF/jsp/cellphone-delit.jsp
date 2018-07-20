@@ -18,7 +18,7 @@
 		<div>
 			<label for="cellphone">手机名称</label>
 			<f:input  id="cellphone" path="cellphone" type="text" value="${cellphone.cellphone}"/>
-			<f:errors path="cellphone" cssClass="errors"></f:errors>
+			<f:errors path="cellphone" cssClass="error"></f:errors>
 		</div>
 		
 		<div>
@@ -67,6 +67,18 @@
 			<label for="description">简介</label>
 			<f:textarea rows="5px" cols="7px" path="description" id="description"></f:textarea>
 			<f:errors path="description" cssClass="errors"></f:errors>
+		</div>
+		
+		<div>
+			<label for="price">价格</label>
+			<f:input  id="price" path="price" type="text"/>
+			<f:errors path="price" cssClass="errors"></f:errors>
+		</div>
+		
+		<div>
+			<label for="cpucorenumber">cpu核心数</label>
+			<f:input  id="cpucorenumber" path="cpucorenumber" type="text"/>
+			<f:errors path="cpucorenumber" cssClass="errors"></f:errors>
 		</div>
 		
 		<div>
