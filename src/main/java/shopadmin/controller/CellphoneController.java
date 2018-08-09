@@ -16,7 +16,6 @@ import shopadmin.service.CellphoneService;
 
 @Controller
 public class CellphoneController {
-	//123
 	
 	private CellphoneService cellphoneService;
 	
